@@ -20,7 +20,10 @@ app.use(express.urlencoded({ extended: true, limit: '500mb' }));
 // CORS configuration
 app.use(
   cors({
-    origin: "https://digital-world-with-vaishnavi-fronte-vert.vercel.app",
+    origin: [
+      "https://digital-world-with-vaishnavi-fronte-vert.vercel.app",
+      "https://digital-world-with-vaishnavi-fronte-delta.vercel.app"
+    ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
