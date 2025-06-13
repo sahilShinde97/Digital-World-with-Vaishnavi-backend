@@ -4,15 +4,19 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "build": "npm install --legacy-peer-deps"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
-    "cloudinary": "^2.6.1",
+    "cloudinary": "^1.41.3",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
